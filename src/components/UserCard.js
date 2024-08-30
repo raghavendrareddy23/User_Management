@@ -37,7 +37,7 @@ const UserCard = ({ user, onEdit, onDelete }) => {
           {`Lat: ${user.address.geo.lat}, Lng: ${user.address.geo.lng}`}
         </span>
       </p>
-      <div className="flex justify-end space-x-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="flex justify-end space-x-4 mt-4 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <FaEdit className="text-white text-xl cursor-pointer hover:text-blue-300 transition duration-300" onClick={onEdit} />
         <FaTrashAlt className="text-white text-xl cursor-pointer hover:text-red-300 transition duration-300" onClick={onDelete} />
       </div>
