@@ -16,6 +16,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 shadow-lg z-50">
+      <ToastContainer />
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">User Management System</h1>
         <div className="block lg:hidden">
@@ -60,7 +61,6 @@ const Header = () => {
           </button>
         </div>
       )}
-      <ToastContainer />
     </header>
   );
 };
